@@ -1,0 +1,494 @@
+/*
+Theme Name: Photography Theme Anjileen
+Author: Anjileen Daji
+Description: A simple photography theme
+Version: 1
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: photographythemeanjileen
+*/
+ 
+body {
+background: #fff;
+line-height: 1.3;
+}
+
+/* CSS Rest */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* Links */
+a, a:visited, span a {
+	text-decoration: none !important;
+	color: #000;
+}
+
+/* Links hover */
+a:hover {
+	color: #957e66;
+}
+
+span a:hover {
+	#4591ca;
+}
+
+/* Scale images */
+.wp-block-image img {
+	height: auto;
+}
+
+/* Image align right */
+img.alignright {
+	float: right;
+	padding-left: 0.7em;
+}
+
+/* Image align left */
+img.alignleft {
+	float: left;
+	padding-right: 0.7em;
+}
+
+/* Paragraph font */
+p {
+	font-size: 17px;
+	line-height: 1.7;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+
+main p {
+	margin-bottom: 1em;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.7;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 1em;
+	color: #000;
+}
+
+/* Heading 1 */
+h1 {
+	font-size: 32px;
+}
+
+/* Heading 1 banner font */
+h1#banner {
+	text-shadow: 2px 1px 6px #000000;
+	padding-top: 15%;
+	color: #ffffff;
+	
+}
+
+/* Heading 2 */
+h2 {
+	font-size: 25px;
+	
+}
+
+/* Heading 3 */
+h3 {
+	font-size: 20px;
+	color: #363636;
+	font-weight: 400;
+}
+
+/* Bold font */
+.bold {
+	font-weight: 700;
+}
+
+/* Nav container */
+.navcontainer {
+	width: 100%;
+	display: block;
+	background: #000;
+	padding: 1.5em 6em 0.5em 6em;
+}
+	
+/* Logo */
+.logo {
+	width: 30%;
+	float: left;
+	display: inline;
+	margin-top: 2px;
+}
+
+.logo img {
+	max-width: 250px;
+}
+
+.logo p {
+	color: #fff;
+	font-size: 25px;
+}
+
+/* Navigation */	
+nav.nav {
+	overflow: hidden;
+	background-color: #000;
+	font-family: 'Open Sans', sans;
+	min-height: 55px;
+}
+
+/* Navigation link */
+nav.nav a {
+	float: right;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em 0.5em 1em;
+	border: 2px solid transparent;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+/* Navigation link hover */
+nav.nav a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+/* Navigation list style */
+nav.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+nav.nav li {
+	float: left;
+}
+
+/* Mobile nav */
+#mobilenav {
+	display: none;
+}
+
+#mobilenav a {
+	display: block; 
+	width: 100%;
+	padding: 1em 4em 0.5em 4em;
+	text-align: left;
+}
+
+#navlinks {
+	width: 100%;
+	float: right;
+	display: inline-block;
+}
+
+#navlinks a {
+	float: left;
+}
+
+/* Hide the mobile nav toggle icon */
+nav.nav a.icon {
+	display: none;
+}
+
+/* Style the hamburger menu */
+.nav a.icon {
+	background: #000;
+	display: block;
+	position: absolute;
+	left: 0;
+	color: #fff;
+	width: 100%;
+	border: 1px solid #a5a5a5;
+}
+
+.nav a.icon:hover {
+	border: 1px solid #a5a5a5;
+}
+
+/* Header */
+header.header {
+	background: #000;
+	color: #000;
+	text-align: center;
+	height: 450px;
+	background-image: url('./images/photographer.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+/* Banner */
+.banner {
+	width: 100%;
+	height: auto;
+	margin: 10px 0 30px;
+}
+
+/* Banner image */
+.banner img {
+	width: 100%;
+}
+
+/* Main content */
+main {
+	padding: 1.5em 6em 1em 6em;
+	min-height: 60vh;
+}
+
+main a {
+	text-decoration: underline;
+}
+
+/* Column container */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Left column */
+.leftcolumn {
+	flex: 60%; 
+	background-color: #fff; 
+	padding: 10px 10px 10px 0; 
+}
+
+/* Right column */
+.rightcolumn {
+	flex: 40%; 
+	background-color: #fff; 
+	padding: 10px 0px 10px 0; 
+}
+
+/* Footer */
+footer.footer {
+	background: #000;
+	padding: 1em 6em 1em 6em;
+	margin-top: 20px;
+}
+
+ /* Footer logo */
+.footer img {
+	max-width: 200px;
+}
+
+/* Footer links */
+footer a, footer a:hover, footer a:visited, footer a:active {
+	color: #fff;
+}
+
+/* Footer icon */
+img#instaicon {
+	margin-right: 10px;
+}
+
+/* Footer columns */
+
+.footcol1 {
+	flex: 30%; 
+	background-color: #000; 
+	padding: 10px 10px 40px 0; 
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.footcol2 {
+	flex: 20%; 
+	background-color: #000; 
+	padding: 10px 10px 40px 10px; 
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.footcol3 {
+	flex: 30%; 
+	background-color: #000; 
+	padding: 10px 10px 40px 10px; 
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.footcol4 {
+	flex: 20%; 
+	background-color: #000; 
+	padding: 10px 0 40px 10px; 
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+/* Footer paragraph font */
+footer p {
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+}
+
+/* Flex 100% */
+.flex100 {
+	flex-basis: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+	width: 25%;
+	float: right;
+}
+
+.sidebar#sidebar-primary {
+	width: 100%;
+}
+
+/* Blog content */
+.content {
+	width: 75%;
+	float: left;
+}
+
+/* Contact form */
+.wpcf7 {
+	width: 100%;
+}
+
+.wpcf7-text, .wpcf7-textarea {
+	width: 80%;
+	padding: 0.3em;
+}
+
+.wpcf7-submit {
+	font-size: 16px;
+	background: #000;
+	color: #fff;
+	padding: 0.7em 1.5em;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 750px) {
+	
+.logo {
+	width: 100%;
+	float: none;
+}
+
+.logo p {
+	text-align: center;
+}
+	
+nav.nav #navlinks {
+	display: none;
+}
+
+nav.nav li, nav.nav ul {
+	float: none;
+}
+
+.navcontainer {
+	padding: 0 0.5em 0 0.5em;
+}
+
+nav.nav a:hover {
+border: 2px solid transparent;
+}
+	
+nav.nav a.icon {
+	display: block;
+}
+	
+#mobilenav a {
+	padding: 0.5em 1em 0.5em 1em;
+}
+	
+main {
+	padding: 0.5em 1em 0.5em 1em;
+}
+	
+footer.footer {
+	padding: 0.5em 1em 0.5em 1em;
+}
+	
+h1#banner {
+	font-size: 28px;
+	}
+	
+.content, .sidebar {
+	width: 100%;
+	float: none;
+}
+
+img.alignright, img.alignleft {
+	float: none;
+	display: block;
+	margin: auto auto 1em;
+}
+}
+
+@media screen and (min-width: 751px) {
+#mobilenav {
+	display: none !important;
+	}
+}
+
+@media screen and (max-width: 750px) {
+.row {   
+	flex-direction: column;
+	}
+
+nav.nav a {
+	padding: 0.5em 2em 0.5em 2em;
+	}
+
+nav.nav {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	}
+	
+.logo {
+	width: 100%;
+	float: none;
+	display: block;
+	text-align: center;
+}
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+.logo {
+	width: 100%;
+	float: none;
+	display: block;
+	text-align: center;
+}
+
+#navlinks {
+	float: none;
+	display: block;
+}
+
+nav.nav ul {
+	float: none;
+	text-align: center;
+}
+
+nav.nav li {
+	float: none;
+	display: inline-block;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.rightcolumn {
+	text-align: right;
+	}
+}
+
+
+
